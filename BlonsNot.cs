@@ -1,10 +1,17 @@
-﻿namespace NotBlons;
+﻿using System.Numerics;
 
-public class BlonsNot : IDrawable, IHurtable
+namespace NotBlons;
+
+public class BlonsNot : IDrawable, IHurtable, IMovable
 {
     public void Draw()
     {
         
+    }
+
+    public void HereIAm(Vector2 position)
+    {
+      
     }
 
     public void OnOuch()
