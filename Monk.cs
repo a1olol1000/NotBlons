@@ -19,7 +19,7 @@ public class Monk : IAttack, IDrawable, IClicable
         
     }
 
-    public void powie()
+    public void Powie(int atack)
     {
         
     }

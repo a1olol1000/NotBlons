@@ -2,5 +2,5 @@
 
 public interface IAttack
 {
-    public void powie();
+    public void Powie(int atack);
 }

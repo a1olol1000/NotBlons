@@ -2,5 +2,5 @@
 
 public interface IHurtable
 {
-    public void OnOuch();
+    public void OnOuch(float damage);
 }
