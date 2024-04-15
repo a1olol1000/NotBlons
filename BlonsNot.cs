@@ -4,20 +4,23 @@ using System.Reflection;
 
 namespace NotBlons;
 
-public class BlonsNot : IDrawable, IHurtable, IMovable
+public class BlonsNot : IDrawable, IFixable, IMovable
 {
     public Vector2 positionc;
     public bool isAlive = true;
-    private float _hp;
-    private float _maxHp;
+    private float _hp = 20f;
+    private float _maxHp = 20f;
     public float health
     {
         get {return _hp;}
-        set{Math.Clamp(_hp,0,_maxHp);}
+        set{_hp=Math.Clamp(value,0,_maxHp);}
     }    
     public void Draw()
     {
-        Raylib.DrawCircle((int)positionc.X,(int)positionc.Y,20,Color.Red);
+        if (isAlive)
+        {
+            Raylib.DrawCircle((int)positionc.X,(int)positionc.Y,20,Color.Red);  
+        }
     }
 
 
@@ -27,10 +30,20 @@ public class BlonsNot : IDrawable, IHurtable, IMovable
         return positionc;
     }
 
+    public void OnHeal(float antiDamage)
+    {
+        if (isAlive)
+        {
+            health = health+antiDamage; 
+        }
+
+        
+    }
+
     public void OnOuch(float damage)
     {
         health = health-damage;
-        if (health == 0)
+        if (health < 0.01f)
         {
             isAlive = false;
         }

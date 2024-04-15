@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj": {}
+    "c:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj": {
+    "c:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj",
+        "projectUniqueName": "c:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj",
         "projectName": "NotBlons",
-        "projectPath": "C:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj",
+        "projectPath": "c:\\Users\\jj\\C#\\NotBlons\\NotBlons\\NotBlons.csproj",
         "packagesPath": "C:\\Users\\jj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jj\\C#\\NotBlons\\NotBlons\\obj\\",
+        "outputPath": "c:\\Users\\jj\\C#\\NotBlons\\NotBlons\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jj\\AppData\\Roaming\\NuGet\\NuGet.Config"
