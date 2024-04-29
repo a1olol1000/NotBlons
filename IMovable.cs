@@ -4,5 +4,5 @@ namespace NotBlons;
 
 public interface IMovable
 {
-    public Vector2 HereIAm(Vector2 position);
+    public Vector2 HereIAm(float deltaTime,float dir1,float dir2,bool randomspeed);
 }
